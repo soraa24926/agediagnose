@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>生まれてから何日？</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="title-area">
+          <div class="title"><strong>生まれてから何日？</strong></div>
+          <div class="caution">（誕生日を半角数字入力）</div>
+        </div>
+        <div class="input-area">
+          <input type="number" placeholder="year" id="year" value="2001">
+          <input type="number" placeholder="month" id="month" value="9">
+          <input type="number" placeholder="day" id="day" value="26">         
+          <div id="btn" class="nobtn">計算</div>
+        </div>
+        <div class="result-area">
+          <p>生まれてから<span id="dayprogress">???</span>日経過していて、だいたい<span id="age">???</span>歳です！
+            <br><br>日本人の平均寿命は、30757日84歳です！
+            <br>1日1日後悔しないように生きていきましょう！
+          </p>
+        </div>
+        <footer>©︎ asakasora 2021</footer>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>   
+</html>

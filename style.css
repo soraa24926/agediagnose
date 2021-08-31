@@ -1,0 +1,83 @@
+/* ページ全体 */
+body{
+  background-color: #ccc;
+}
+/* 全体 */
+.container{
+  width: 500px;
+  margin: 25px auto;
+}
+.title-area{
+  margin-bottom: 20px;
+  position: relative;
+}
+.title{
+  font-size: 36px;
+}
+/* 注意書き */
+.caution{
+  font-size: 15px;
+  position: absolute;
+  bottom: 1px;
+  right: 10px;
+}
+.input-area{
+  /* コードの改行で空白が作られてしまうため修正 */
+  font-size: 0;
+  margin-bottom: 20px;
+}
+#year,
+#month,
+#day,
+#btn{
+  font-size: 14px;
+  /* 基本はwidth,hightに＋してpaddingやborderが入るがbox-sizingによりwidth,hightの枠内にpaddingやborderを入れ込む */
+  box-sizing: border-box;
+  padding: 10px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+#day {
+  width: 140px;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+
+#month,
+#year {
+  width: 110px;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+
+#btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 110px;
+  background: #3897fd;
+  text-align: center;
+  color: #fff;
+}
+/* 結果エリア */
+.result-area{
+  background-color: #f8f8f8;
+  padding: 10px;
+  height: 130px;
+  border-radius: 5px;
+  /* 子要素の配置を親要素から計算するために初期設定のstaticからrelaticeに変更 */
+  position: relative;
+}
+#dayprogress,
+#age
+{
+color: red;
+font-weight: bold;
+}
+
+footer{
+  margin-top: 15px;
+  /* 文字置く左右 */
+  text-align: right;
+  font-size: 15px;
+}
