@@ -59,6 +59,9 @@ body{
   text-align: center;
   color: #fff;
 }
+.nobtn{
+  opacity: 0.5;
+}
 /* 結果エリア */
 .result-area{
   background-color: #f8f8f8;
@@ -68,12 +71,30 @@ body{
   /* 子要素の配置を親要素から計算するために初期設定のstaticからrelaticeに変更 */
   position: relative;
 }
+#result{
+  margin: 10px 7px;
+}
+/* 経過日数と年齢にアクセント */
 #dayprogress,
 #age
 {
 color: red;
 font-weight: bold;
 }
+#reset{
+  margin: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  /* 親要素のポジションがrelativeのため親要素から計算した位置に配置 */
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 13px;
+}
+#reset.hidden{
+  display: none;
+}
+
 
 footer{
   margin-top: 15px;
